@@ -1,0 +1,18 @@
+function calculator(operation, num1, num2) {
+    if (operation === "add") {
+        return num1 + num2;
+    } else if (operation === "subtract") {
+        return num1 - num2;
+    } else if (operation === "multiply") {
+        return num1 * num2;
+    } else if (operation === "divide") {
+        return num1 / num2;
+    } else {
+        return "Invalid operation";
+    }
+}
+
+console.log(calculator("add", 5, 2)); // 7
+console.log(calculator("subtract", 5, 2)); // 3
+console.log(calculator("multiply", 5, 2)); // 10
+console.log(calculator("divide", 5, 2)); // 2.5
